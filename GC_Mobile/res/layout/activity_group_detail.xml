@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="10dp"
+    android:textColor="#f8f8ff"
+    tools:context=".Group" >
+    
+     <TextView
+        android:id="@+id/groupname_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingBottom="10dp"
+        android:textColor="#f8f8ff" 
+        android:text="Group Name"        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+      <TextView
+        android:id="@+id/groupname_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupname_lbl"
+        android:paddingRight="30dp"
+         android:paddingBottom="30dp"
+         android:textColor="#f8f8ff" />
+      
+      
+      <TextView
+        android:id="@+id/grouptype_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupname_lbl_ans"
+        android:text="Group Type"
+         android:paddingBottom="10dp"
+         android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/grouptype_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grouptype_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff" />
+
+      
+    <TextView
+        android:id="@+id/groupdescription_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/grouptype_lbl_ans"
+          android:paddingBottom="10dp"
+        android:text="Group Description"
+        android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <TextView
+        android:id="@+id/groupdescription_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupdescription_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff"  />
+
+    <TextView
+        android:id="@+id/groupwebsite_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/groupdescription_lbl_ans"
+        android:paddingBottom="10dp"
+        android:text="Group Website"
+        android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   
+       <TextView
+        android:id="@+id/groupwebsite_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/groupwebsite_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff" />
+
+</RelativeLayout>

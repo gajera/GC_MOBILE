@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+     android:paddingLeft="10dp"
+    android:textColor="#f8f8ff"
+    tools:context=".MemberProfile" >
+    
+     <TextView
+        android:id="@+id/userfullname_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingBottom="10dp"
+        android:textColor="#f8f8ff" 
+        android:text="Member Name"        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+      <TextView
+        android:id="@+id/userfullname_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userfullname_lbl"
+        android:paddingRight="30dp"
+         android:paddingBottom="30dp"
+         android:textColor="#f8f8ff" />
+      
+      
+      <TextView
+        android:id="@+id/memberemailid_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userfullname_lbl_ans"
+        android:text="Contact Info"
+         android:paddingBottom="10dp"
+         android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/memberemailid_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberemailid_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff" />
+
+      
+    <TextView
+        android:id="@+id/memberinterest_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/memberemailid_lbl_ans"
+          android:paddingBottom="10dp"
+        android:text="Area of Interest"
+        android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+      <TextView
+        android:id="@+id/memberinterest_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memberinterest_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff"  />
+
+    <TextView
+        android:id="@+id/membercurrent_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/memberinterest_lbl_ans"
+        android:paddingBottom="10dp"
+        android:text="Currently"
+        android:textColor="#f8f8ff" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   
+       <TextView
+        android:id="@+id/membercurrent_lbl_ans"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/membercurrent_lbl"
+         android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+         android:textColor="#f8f8ff" />
+
+</RelativeLayout>

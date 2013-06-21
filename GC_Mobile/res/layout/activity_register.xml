@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GroupCreate" 
+    android:orientation="vertical"
+    android:paddingTop="5dp" 
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+     >
+    
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/groupname_lbl"
+    android:text="Group Name"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/groupname_txt"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingTop="5dp"
+>
+<TextView
+    android:id="@+id/Grouptype_lbl"
+    android:text="Group Type"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+<RadioGroup
+android:id="@+id/radiogrouptype"
+    android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:id="@+id/radioalumni"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Alumni" 
+        android:textColor="#f8f8ff"/>
+ 
+    <RadioButton
+        android:id="@+id/Networking"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Networking"
+        android:textColor="#f8f8ff"
+        />
+    </RadioGroup>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/groupsummary_lbl"
+    android:text="Summary"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/groupsummary_txt"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textColor="#f8f8ff" >
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/groupdescription_lbl"
+    android:text="Description"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/groupdescription_txt"
+        android:inputType="text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/website_lbl"
+    android:text="Website URL"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/groupwebsite_txt"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/groupemail_lbl"
+    android:text="EmailId"
+   android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/groupemail_txt"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" 
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:paddingTop="5dp"
+>
+<TextView
+    android:id="@+id/groupaccess_lbl"
+    android:text="Access"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+<RadioGroup
+android:id="@+id/radioacccess"
+    android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:id="@+id/radioopen"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Open Group" 
+        android:textColor="#f8f8ff"/>
+ 
+    <RadioButton
+        android:id="@+id/radionrequest"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Request to Join Group"
+        android:textColor="#f8f8ff"
+        />
+    </RadioGroup>
+</LinearLayout>
+
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/interest"
+    android:text="Interest"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/interest_text"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:lines="3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:scrollHorizontally="true"
+        android:textColor="#f8f8ff" >
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/register_username"
+    android:text="UserName"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/register_username_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/register_password"
+    android:text="Passsword"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/register_password_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/register_verify_pwd"
+    android:text="Verify Passoword"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/register_verify_pwd_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/currenlty"
+    android:text="Currenlty"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+<RadioGroup
+android:id="@+id/radiocurrenlty"
+    android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:id="@+id/business"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Business"
+        android:textColor="#f8f8ff" />
+ 
+    <RadioButton
+        android:id="@+id/student"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Student"
+        android:textColor="#f8f8ff"
+        />
+ 
+    
+    <RadioButton
+        android:id="@+id/service"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Service"
+        android:textColor="#f8f8ff"
+        />
+
+    
+    <RadioButton
+        android:id="@+id/professional"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Professional"
+        android:textColor="#f8f8ff"
+        />
+    
+    <RadioButton
+        android:id="@+id/unemployed"
+        android:layout_width="120dp"
+        android:layout_height="40dp" 
+        android:text="Unemployed"
+        android:textColor="#f8f8ff"
+        />
+    </RadioGroup>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/country"
+    android:text="Country"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/country_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:orientation="horizontal"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+>
+<TextView
+    android:id="@+id/zipcode"
+    android:text="Zipcode"
+    android:layout_width="100dp"
+   android:layout_height="wrap_content"
+   android:textColor="#f8f8ff"
+    />
+
+<EditText
+        android:id="@+id/zipcode_text"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:textColor="#f8f8ff">
+     <requestFocus />
+</EditText>
+</LinearLayout>
+
+</LinearLayout>
+

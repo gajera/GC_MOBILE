@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Group Communication</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_member_home">Home</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="events">Events</string>
+    <string name="title_activity_groups">Groups</string>
+    <string name="title_activity_group">Groups</string>
+    <string name="title_activity_group_home">GroupHome</string>
+    <string name="title_activity_event">Events</string>
+    <string name="title_activity_group_detail">Group_Details</string>
+    <string name="title_activity_group_discussion">Group_Discussion</string>
+    <string name="title_activity_group_memeber">Memebers</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_search_result">SearchResult</string>
+    <string name="title_activity_discussion">Discussions</string>
+    <string name="title_activity_serach_result_home">SearchResults</string>
+    <string name="title_activity_start_discussion">StartDiscussion</string>
+    <string name="title_activity_member_discussion">Discussions</string>
+    <string name="title_activity_member_profile">Profile</string>
+    <string name="title_activity_group_create">GroupCreate</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_group_join">GroupJoin</string>
+    <string name="title_activity_notification__accept">Notification_Accept</string>
+    <string name="title_activity_forgot">Forgot</string>
+
+</resources>

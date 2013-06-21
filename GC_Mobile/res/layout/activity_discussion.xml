@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context=".Discussion" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+    <TableLayout
+           android:id="@+id/tblayout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content" >
+    <TableRow android:id="@+id/tbrow" android:layout_height="wrap_content">
+          
+     </TableRow>
+</TableLayout>
+</ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <EditText
+            android:id="@+id/discussion_txtbox"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:inputType="textMultiLine"
+            android:textColor="#f8f8ff" />
+
+         <Button
+             android:id="@+id/discussion_send_btn"
+             style="?android:attr/buttonStyleSmall"
+             android:layout_width="60dp"
+             android:layout_height="30dp"
+             android:layout_marginLeft="235dp"
+             android:background="#f0e68c"
+             android:text="Send" />
+         
+    </FrameLayout>
+
+</RelativeLayout>
+

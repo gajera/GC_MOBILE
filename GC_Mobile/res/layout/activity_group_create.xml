@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_create_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
+    tools:context=".GroupCreate" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/returngroup_lbl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f8f8ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupname_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Group Name *"
+            android:textColor="#f8f8ff" />
+
+        <EditText
+            android:id="@+id/groupname_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textColor="#f8f8ff" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/Grouptype_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Group Type *"
+            android:textColor="#f8f8ff" />
+
+        <RadioGroup
+            android:id="@+id/radiogrouptype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/Alumni"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Alumni Group"
+                android:textColor="#f8f8ff" 
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/Networking"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Networking Group"
+                android:textColor="#f8f8ff" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupsummary_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Summary *"
+            android:textColor="#f8f8ff" />
+
+        <EditText
+            android:id="@+id/groupsummary_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textColor="#f8f8ff" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupdescription_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Description *"
+            android:textColor="#f8f8ff" />
+
+        <EditText
+            android:id="@+id/groupdescription_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textColor="#f8f8ff" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupwebsite_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Website URL *"
+            android:textColor="#f8f8ff" />
+
+        <EditText
+            android:id="@+id/groupwebsite_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="textWebEmailAddress"
+            android:maxLength="10"
+            android:textColor="#f8f8ff" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupemail_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="EmailId *"
+            android:textColor="#f8f8ff" />
+
+        <EditText
+            android:id="@+id/groupemail_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#f8f8ff" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/groupaccess_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Access *"
+            android:textColor="#f8f8ff" />
+
+        <RadioGroup
+            android:id="@+id/radioacccess"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" >
+
+            <RadioButton
+                android:id="@+id/radioopen"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Open Group"
+                android:textColor="#f8f8ff"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radionrequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request to Join Group"
+                android:textColor="#f8f8ff" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/opengroup_btn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="100dp"
+        android:background="#f0e68c"
+        android:text="Create Group" />
+    
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="44dp"
+         android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/groupemail_lbl"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#f8f8ff" />
+
+    </LinearLayout>
+   
+</LinearLayout>

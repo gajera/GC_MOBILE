@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecs.csus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ecs.csus.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ecs.csus.MemberHome"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_member_home"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Groups"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_groups"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Group"
+            android:label="@string/title_activity_group" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.GroupHome"
+            android:label="@string/title_activity_group_home" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Event"
+            android:label="@string/title_activity_event" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.GroupDetail"
+            android:label="@string/title_activity_group_detail" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.GroupDiscussion"
+            android:label="@string/title_activity_group_discussion" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.GroupMember"
+            android:label="@string/title_activity_group_memeber" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Search"
+            android:label="@string/title_activity_search"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.SearchResult"
+            android:label="@string/title_activity_search_result" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Discussion"
+            android:label="@string/title_activity_discussion" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.SerachResultHome"
+            android:label="@string/title_activity_serach_result_home" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.StartDiscussion"
+            android:label="@string/title_activity_start_discussion" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.MemberDiscussion"
+            android:label="@string/title_activity_member_discussion" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.MemberProfile"
+            android:label="@string/title_activity_member_profile" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.GroupCreate"
+            android:label="@string/title_activity_group_create" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Notification"
+            android:label="@string/title_activity_notification" >
+        </activity>
+
+        <service
+            android:name="com.ecs.csus.Notification_background"
+            android:icon="@drawable/icon"
+            android:label="Notification_background" >
+        </service>
+
+        <activity
+            android:name="com.ecs.csus.GroupJoin"
+            android:label="@string/title_activity_group_join" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.NotificationApprove"
+            android:label="@string/title_activity_notification__accept" >
+        </activity>
+        <activity
+            android:name="com.ecs.csus.Forgot"
+            android:label="@string/title_activity_forgot" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

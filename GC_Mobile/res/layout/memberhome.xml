@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    tools:context=".MemberHome" >
+
+    <ImageButton
+        android:id="@+id/group_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/discussionmem_img_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="55dp"
+        android:src="@drawable/group_icon" />
+
+    <ImageButton
+        android:id="@+id/event_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/group_img_btn"
+        android:layout_marginRight="46dp"
+        android:src="@drawable/event_icon" />
+
+    <ImageButton
+        android:id="@+id/search_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/event_img_btn"
+        android:layout_centerVertical="true"
+        android:background="@drawable/search_img"
+        android:src="@drawable/search_img_btn" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_img_btn"
+        android:layout_alignTop="@+id/creategroup_img_btn"
+        android:src="@drawable/profile_icon" />
+
+    <TextView
+        android:id="@+id/eventtitle_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/group_img_btn"
+        android:layout_below="@+id/event_img_btn"
+        android:text="Groups"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <TextView
+        android:id="@+id/grouptype_lbl_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eventtitle_lbl"
+        android:layout_alignBottom="@+id/eventtitle_lbl"
+        android:layout_alignLeft="@+id/event_img_btn"
+        android:text="@string/events"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <TextView
+        android:id="@+id/groupdescription_lbl_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/discussionmem_img_btn"
+        android:layout_below="@+id/discussionmem_img_btn"
+        android:text="Discussion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <TextView
+        android:id="@+id/groupwebsite_lbl_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/groupdescription_lbl_ans"
+        android:layout_alignBottom="@+id/groupdescription_lbl_ans"
+        android:layout_alignLeft="@+id/search_img_btn"
+        android:text="Search"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <ImageButton
+        android:id="@+id/discussionmem_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/creategroup_img_btn"
+        android:layout_alignLeft="@+id/eventtitle_lbl"
+        android:src="@drawable/discussion_icon" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/creategroup_img_btn"
+        android:layout_alignRight="@+id/creategroup_img_btn"
+        android:layout_below="@+id/creategroup_img_btn"
+        android:text="Create Group"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton7"
+        android:layout_alignTop="@+id/TextView04"
+        android:text="Pending Notification"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <TextView
+        android:id="@+id/welcome_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group_img_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#f8f8ff" />
+
+    <Button
+        android:id="@+id/logout_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView04"
+        android:layout_centerHorizontal="true"
+        android:background="#f0e68c"
+        android:textColor="#000000"
+        android:text="Logout" />
+
+    <ImageButton
+        android:id="@+id/search_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/grouptype_lbl_ans"
+        android:layout_centerVertical="true"
+        android:src="@drawable/search_img_btn" />
+
+    <ImageButton
+        android:id="@+id/creategroup_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/groupdescription_lbl_ans"
+        android:layout_below="@+id/search_image_btn"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/sugesstion_icon" />
+
+</RelativeLayout>
